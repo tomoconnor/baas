@@ -4,8 +4,8 @@ import sys
 import bcrypt
 import logging
 
-logger = logging.getLogger(__name__)
-hdlr = logging.FileHandler('var/%s.log'%__name__)
+logger = logging.getLogger('baas')
+hdlr = logging.FileHandler('/var/log/baas.log')
 formatter =  logging.Formatter('%(asctime)s %(levelname)s %(message)s')
 
 hdlr.setFormatter(formatter)
